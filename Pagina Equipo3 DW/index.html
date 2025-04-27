@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín Floresta - Eventos de Ensueño</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function mostrarSeccion(id) {
+            const secciones = document.querySelectorAll("section");
+            secciones.forEach(section => section.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            mostrarSeccion('inicio');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <span>J</span>
+            <span>A</span>
+            <span>R</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span> </span>
+        </div>
+        <div>
+            <span>F</span>
+            <span>L</span>
+            <span>O</span>
+            <span>R</span>
+            <span>E</span>
+            <span>S</span>
+            <span>T</span>
+            <span>A</span>
+        </div>
+        <h1>Organizamos eventos memorables en un espacio único y natural</h1>
+    </header>
+    <nav> <!--Barra de navegacion-->
+        <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+        <a href="#" onclick="mostrarSeccion('citas')">Citas</a>
+        <a href="#" onclick="mostrarSeccion('paquetes')">Paquetes</a>
+        <a href="#" onclick="mostrarSeccion('servicios')">Servicios</a>
+        <a href="#" onclick="mostrarSeccion('opiniones')">Opiniones</a>
+        <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+    </nav>
+    <main>
+    <!--Paginas principales-->
+        <section id="inicio" class="active">
+            <h2>LA MEJOR OPCION PARA TENER EL EVENTO QUE DESEAS</h2>
+            <p>Si estas pensando en una reunio al aire libre o en un ambiente que te de mas privacidad. Nuestra variedad de espacios son perfectos para eventos empresariales: desde una sesion de trabajo hasta grandes exposiciones, eventos de presentacion y conciertos.</p>
+            <div><br><br></div>
+            <center>
+                <div class="section--fav">
+                    <img class="img-fav" src="https://banquetesforesta.com/wp-content/uploads/2020/11/jardin-foresta-acomodo-de-mesas.jpg" alt="Evento 1">
+                    <img class="img-fav" src="https://banquetesforesta.com/wp-content/uploads/2020/11/jardin-foresta-banquetes.jpg" alt="Evento 2">
+                    <img class="img-fav" src="https://banquetesforesta.com/wp-content/uploads/2020/11/jardin-foresta-evento-de-boda.jpg" alt="Evento 3">
+                    
+                    <img class="img-fav" src="https://banquetesforesta.com/wp-content/uploads/2020/11/jardin-foresta-boda-1.jpg" alt="Evento 3">
+                    <img class="img-fav" src="https://banquetesforesta.com/wp-content/uploads/2020/11/bodas-en-jardin-foresta.jpg" alt="Evento 3">
+                    <img class="img-fav" src="https://banquetesforesta.com/wp-content/uploads/2020/11/jardines-en-jardin-foresta.jpg" alt="Evento 3">
+
+
+
+                </div>
+            </center>
+            
+        </section>
+        <section id="citas">
+            <h2>Solicita tu cita</h2>
+            <div class="citas-container">
+                <div class="citas-form">
+                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <textarea placeholder="Descripción del Evento" rows="4" required></textarea>
+                    <button type="submit">Reservar Cita</button>
+                </div>
+                <div class="citas-calendar">
+                    <label for="fecha">Selecciona una fecha:</label>
+                    <input type="date" id="fecha" required><br>
+                    <label for="hora">Selecciona una hora:</label>
+                    <input type="time" id="hora" required>
+                </div>
+            </div>
+        </section>
+        <section id="paquetes">
+    <h2>Paquetes</h2>
+    <div class="paquetes-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; padding: 1rem;">
+        <!-- Paquete 1 -->
+        <a href="#" onclick="mostrarSeccion('Bodas')">
+            <div class="paquete-box" >
+                <div class="galeria"> <!--Imagenes para los servicios-->
+                    <img src="https://media.glamour.mx/photos/63e2c6cd70f88f66b926f631/3:2/w_3000,h_2000,c_limit/bodas-gratis-en-mexico.jpg">
+                    <h3 style="margin: 0;">Bodas</h3>
+                </div>
+                
+                
+            </div>
+        </a>
+        
+        <!-- Paquete 2 -->
+        <a href="#" onclick="mostrarSeccion('Bautizos')">
+            <div class="paquete-box" >
+                <div class="galeria"> <!--Imagenes para los servicios-->
+                    <img src="https://images.squarespace-cdn.com/content/v1/5f5a7119d559965217d72c39/1601416612392-DBJH423GHIVV2ONPHJYV/0070_Bautizo_Mateo.jpg">
+                    <h3 style="margin: 0;">Bautizos</h3>
+                </div>
+                
+            </div>
+        </a>
+        
+        <!-- Paquete 3 -->
+        <a href="#" onclick="mostrarSeccion('XV Años')">
+            <div class="paquete-box" >
+                <div class="galeria"> <!--Imagenes para los servicios-->
+                    <img src="https://quintasanagustin.com.mx/wp-content/uploads/2021/01/front-view-composition-for-quinceanera-party-on-table-scaled.jpg">
+                    <h3 style="margin: 0;">XV Años</h3>
+                </div>
+                
+            </div>
+        </a>
+
+        <!-- Paquete 4 -->
+        <a href="#" onclick="mostrarSeccion('Cumpleaños')">
+            <div class="paquete-box" >
+                <div class="galeria"> <!--Imagenes para los servicios-->
+                    <img src="https://www.casahaciendaqueirolo.com/blog/wp-content/uploads/2019/03/10-cosas-que-no-pueden-faltar-en-la-celebracion-de-cumpleanos-1590x795.jpg">
+                    <h3 style="margin: 0;">Cumpleaños</h3>
+                </div>
+                
+            </div>
+        </a>
+        
+        <!--Paquete 5-->
+        <a href="#" onclick="mostrarSeccion('Graduaciones')">
+            <div class="paquete-box" >
+                <div class="galeria"> <!--Imagenes para los servicios-->
+                    <img src="https://www.elsoldepuebla.com.mx/finanzas/o0uoq6-graduaciones-escolares-se-encarecen-un-39.7/ALTERNATES/LANDSCAPE_1140/Graduaciones%20escolares%20se%20encarecen%20un%2039.7-">
+                    <h3 style="margin: 0;">Graduaciones</h3>
+                </div>
+                
+            </div>
+        </a>
+        
+
+    </div>
+        </section>
+
+        <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; padding: 1rem;">
+        <!-- Servicio 1 -->
+        <div class="servicio-box" style="border: 1px solid #ccc; border-radius: 10px; padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); cursor: pointer;">
+            <div class="galeria"> <!--Imagenes para los servicios-->
+                <img src="https://comedera.com/wp-content/uploads/sites/9/2022/12/Desayono-americano-shutterstock_2120331371.jpg">
+            </div>
+            <h3 style="margin: 0;">Desayunos</h3>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="servicio-box" style="border: 1px solid #ccc; border-radius: 10px; padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); cursor: pointer;">
+            <div class="galeria"> <!--Imagenes para los servicios-->
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/inline-images/comidas-fritas-plato-apanado-ensalada.jpg">
+            </div>
+            <h3 style="margin: 0;">Comidas</h3>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="servicio-box" style="border: 1px solid #ccc; border-radius: 10px; padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); cursor: pointer;">
+            <div class="galeria"> <!--Imagenes para los servicios-->
+                <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/bca1990/2147483647/strip/true/crop/1200x676+0+22/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F8c%2Fa9%2F7d8796a043a78f7b371668109adf%2Fcena-romantica.jpg">
+            </div>
+            <h3 style="margin: 0;">Cenas</h3>
+        </div>
+        <!-- Servicio 4 -->
+        <div class="servicio-box" style="border: 1px solid #ccc; border-radius: 10px; padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); cursor: pointer;">
+            <div class="galeria"> <!--Imagenes para los servicios-->
+                <img src="https://elgrancatering.com/wp-content/uploads/2023/09/66-1024x683.png">
+            </div>
+            <h3 style="margin: 0;">Banquetes</h3>
+        </div>
+    </div>
+        </section>
+
+        <section id="opiniones">
+    <h2>Opiniones</h2>
+    <div class="opiniones-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; padding: 1rem;">
+        <!-- Ejemplo de opinión -->
+        <div class="opinion-box" style="border: 1px solid #ccc; border-radius: 10px; padding: 1rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h3 style="margin: 0 0 0.5rem;">Juan Pérez</h3>
+            <div class="rating" style="color: gold; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                ★★★★☆
+            </div>
+            <p style="font-size: 0.9rem; color: #555;">El servicio fue excelente y los banquetes deliciosos. ¡Muy recomendable!</p>
+        </div>
+        <!-- Otra opinión -->
+        <div class="opinion-box" style="border: 1px solid #ccc; border-radius: 10px; padding: 1rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h3 style="margin: 0 0 0.5rem;">María López</h3>
+            <div class="rating" style="color: gold; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                ★★★★★
+            </div>
+            <p style="font-size: 0.9rem; color: #555;">Un lugar mágico para celebrar nuestro evento. Todo salió perfecto. ¡Gracias!</p>
+        </div>
+        <!-- Añadir más opiniones como esta -->
+        <div class="opinion-box" style="border: 1px solid #ccc; border-radius: 10px; padding: 1rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h3 style="margin: 0 0 0.5rem;">Carlos Rivera</h3>
+            <div class="rating" style="color: gold; font-size: 1.2rem; margin-bottom: 0.5rem;">
+                ★★★☆☆
+            </div>
+            <p style="font-size: 0.9rem; color: #555;">Buena atención, aunque podrían mejorar algunos detalles en la organización.</p>
+        </div>
+    </div>
+        </section>
+
+	    <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-container" style="display: flex; gap: 2rem;">
+        <!-- Mapa: lado izquierdo -->
+        <div class="contact-map" style="flex: 1;">
+            <h3>Nuestra Ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.914153620119!2d-122.08424968469252!3d37.421999779824004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2b11111111%3A0x2222222fcd12abc!2sGoogleplex!5e0!3m2!1ses!2sus!4v1630464073177!5m2!1ses!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                style="width: 100%; height: 300px; border-radius: 10px;">
+            </iframe>
+        </div>
+        <!-- Formulario: lado derecho -->
+        <div class="contact-form" style="flex: 1;">
+            <h3>Déjanos tus datos</h3>
+            <input type="text" placeholder="Nombre Completo" required style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+            <input type="email" placeholder="Correo Electrónico" required style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+            <input type="tel" placeholder="Teléfono" required style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+            <textarea placeholder="Mensaje o Dirección" rows="4" required style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+            <button type="submit" style="padding: 0.8rem 1.2rem; background-color: #48b1bf; color: white; border: none; border-radius: 5px; cursor: pointer;">Enviar Información</button>
+        </div>
+    </div>
+        </section>
+    <!--*****************************************************************-->
+    
+    <!--Paquetes------------------------------------------------------>
+        <section id="Bodas">
+            <div class="contact-container" style="display: flex; gap: 2rem;">
+                <div class="contact-map" style="flex: 1;">
+                    <h1>Bodas</h1>
+                    <p>Tenemos todo lo que necesitas y mas para recordar estos momentos durante mucho tiempo, nosotros nos escargamos de todo para que disfrutes del momento</p>
+                    <br><br>
+                    <a href="#" onclick="mostrarSeccion('citas')">
+                        <div class="citas-form">
+                           <button type="submit">Reservar Cita</button> 
+                        </div>
+                        
+                    </a> 
+                    
+                </div>
+                <div class="contact-form" style="flex: 1;">
+                    <div class="galeriaa"> 
+                       <img src="https://cdn0.matrimonios.cl/article-vendor/3506/original/1280/jpg/ideas-decoracion-bodas-tendencias-arco-flores-ceremonias-al-aire-libre_8_163506-166559376933995.jpeg">
+                       <img src="https://s1.elespanol.com/2023/05/25/vivir/766433879_233435830_1024x576.jpg">
+                       <img src="https://www.lasnubes.com.mx/wp-content/uploads/2024/03/juegos-que-hacen-que-las-bodas-sean-inolvidables-2.jpg"> 
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="Bautizos">
+            <div class="contact-container" style="display: flex; gap: 2rem;">
+                <div class="contact-map" style="flex: 1;">
+                    <h1>Bautizos</h1>
+                    <p>Tenemos todo lo que necesitas y mas para recordar estos momentos durante mucho tiempo, nosotros nos escargamos de todo para que disfrutes del momento</p>
+                    <br><br>
+                    <a href="#" onclick="mostrarSeccion('citas')">
+                        <div class="citas-form">
+                           <button type="submit">Reservar Cita</button> 
+                        </div>
+                        
+                    </a> 
+                    
+                </div>
+                <div class="contact-form" style="flex: 1;">
+                    <div class="galeriaa"> 
+                       <img src="data:image/jpeg;base64,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">
+                       <img src="https://misglobos.com/cdn/shop/articles/decoracion-de-bautizos-para-una-celebracion-inolvidable-354909.jpg?v=1697039884&width=2048">
+                       <img src="https://mibebeyyo.elmundo.es/images/bebes2/organizar-bautizo.webp"> 
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="XV Años">
+            <div class="contact-container" style="display: flex; gap: 2rem;">
+                <div class="contact-map" style="flex: 1;">
+                    <h1>XV Años</h1>
+                    <p>Tenemos todo lo que necesitas y mas para recordar estos momentos durante mucho tiempo, nosotros nos escargamos de todo para que disfrutes del momento</p>
+                    <br><br>
+                    <a href="#" onclick="mostrarSeccion('citas')">
+                        <div class="citas-form">
+                           <button type="submit">Reservar Cita</button> 
+                        </div>
+                        
+                    </a> 
+                    
+                </div>
+                <div class="contact-form" style="flex: 1;">
+                    <div class="galeriaa"> 
+                       <img src="https://quintasanagustin.com.mx/wp-content/uploads/2021/01/front-view-composition-for-quinceanera-party-on-table-scaled.jpg">
+                       <img src="https://vizualmexico.com.mx/wp-content/uploads/2023/01/XV-Mayte-0144-1200x801.jpeg">
+                       <img src="https://coolhuntermx.com/wp-content/uploads/2020/11/Coolhuntermx_xvan%CC%83os_VF9.jpg"> 
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="Cumpleaños">
+            <div class="contact-container" style="display: flex; gap: 2rem;">
+                <div class="contact-map" style="flex: 1;">
+                    <h1>Cumpleaños</h1>
+                    <p>Tenemos todo lo que necesitas y mas para recordar estos momentos durante mucho tiempo, nosotros nos escargamos de todo para que disfrutes del momento</p>
+                    <br><br>
+                    <a href="#" onclick="mostrarSeccion('citas')">
+                        <div class="citas-form">
+                           <button type="submit">Reservar Cita</button> 
+                        </div>
+                        
+                    </a> 
+                    
+                </div>
+                <div class="contact-form" style="flex: 1;">
+                    <div class="galeriaa"> 
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2yzmzuZs5I3JQvP-xWCigaaDhWNgfIOZGVg&s">
+                       <img src="https://www.casahaciendaqueirolo.com/blog/wp-content/uploads/2019/03/10-cosas-que-no-pueden-faltar-en-la-celebracion-de-cumpleanos-1590x795.jpg">
+                       <img src="https://cdn.alboompro.com/662e3fea959d710001cbada1_6685d26d86ca5d0001f069e4/original_size/1.jpg?v=1"> 
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="Graduaciones">
+            <div class="contact-container" style="display: flex; gap: 2rem;">
+                <div class="contact-map" style="flex: 1;">
+                    <h1>Graduaciones</h1>
+                    <p>Tenemos todo lo que necesitas y mas para recordar estos momentos durante mucho tiempo, nosotros nos escargamos de todo para que disfrutes del momento</p>
+                    <br><br>
+                    <a href="#" onclick="mostrarSeccion('citas')">
+                        <div class="citas-form">
+                           <button type="submit">Reservar Cita</button> 
+                        </div>
+                        
+                    </a> 
+                    
+                </div>
+                <div class="contact-form" style="flex: 1;">
+                    <div class="galeriaa"> 
+                       <img src="https://graduaciones-mexico.com.mx/wp-content/uploads/2021/06/cropped-cropped-166228745_112553844264195_8693882837229275083_n.png">
+                       <img src="https://jardinesdefiestasandasadi.com/wp-content/uploads/2023/09/salon-de-fiestas-para-graduaciones-ixtapaluca-chalco-2.jpg">
+                       <img src="https://www.lasnubes.com.mx/wp-content/themes/nubes/assets/images/pic-graduacion.jpg"> 
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    <!------------------------------------------------------------->
+
+
+    </main>
+    <footer>
+        <p>© 2024 Jardín Floresta - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

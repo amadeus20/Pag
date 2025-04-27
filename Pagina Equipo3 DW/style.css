@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+ }
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f7;
+    color: #333;
+}
+
+header {
+    /*background: linear-gradient(to right, #85d8ce, #a6f6f1);*/
+    background-image: url(https://www.hola.com/horizon/landscape/4c15d31a029b-jardines-verdes-t.jpg);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 0.9rem;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+}
+
+header p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+nav {
+    background-color: #48b1bf;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #37858f;
+}
+
+section {
+    display: none;
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.active {
+    display: block;
+}
+
+section h2 {
+    color: #48b1bf;
+    border-bottom: 2px solid #48b1bf;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.galeria {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.citas-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.citas-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.citas-form input,
+.citas-form textarea,
+.citas-form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.citas-form button {
+    background-color: #48b1bf;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.citas-form button:hover {
+    background-color: #37858f;
+}
+
+.citas-calendar {
+    flex: 1;
+    text-align: center;
+}
+
+.citas-calendar input[type="date"],
+.citas-calendar input[type="time"] {
+    width: 80%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*Para las imagenes del inicio*/
+.section--fav{
+    display: flex;
+    width: 800px;
+    height: 300px;
+    border-radius: 20px;
+ }
+ .section--fav img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+    border-radius: 20px;
+ }
+ .section--fav img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter:contrast(120%);
+ }
+
+/*-------------------------------*/
+
+/*letras del encabezado*/
+div span{
+    font-size: 6vw;
+    font-weight: 600;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+}
+div span:not(:first-child){
+    margin-left: -0.23em; ;
+}
+
+/*---------------------------------------*/
+a{
+    color: rgb(0, 0, 0,0.9);
+    text-decoration: none;
+}
+.paquete-box div{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0,0, 0,0.1);
+    cursor: pointer;
+}
+div h1{
+    color: #48b1bf;
+    padding: 1rem;
+    text-align: left;
+    font-size: 5vw;
+}
+.galeriaa {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+.galeriaa img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+    border-radius: 20px;
+}
+.galeriaa img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter:contrast(120%);
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #48b1bf;
+    color: white;
+}
